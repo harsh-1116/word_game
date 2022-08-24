@@ -1,5 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.word_game">
+    package="com.word_game">
    <application
         android:label="My Word"
         android:name="${applicationName}"

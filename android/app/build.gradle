@@ -43,7 +43,7 @@ android {
 
     defaultConfig {
         // TODO: Specify your own unique Application ID (https://developer.android.com/studio/build/application-id.html).
-        applicationId "com.example.word_game"
+        applicationId "com.word_game"
         minSdkVersion 21/// for flutter bluetooth basic  /*flutter.minSdkVersion*/
         targetSdkVersion flutter.targetSdkVersion
         versionCode flutterVersionCode.toInteger()

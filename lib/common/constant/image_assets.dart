@@ -9,6 +9,8 @@ class ImageAssets{
   static String buttonWithIcon = "assets/image/buttonWithIcon.png";
   static String historyIcon = "assets/image/history_icon.svg";
   static String settingsIcon = "assets/image/settings_icon.svg";
+  static String harsh = "assets/image/harsh.JPEG";
+  static String jigs = "assets/image/jigs.JPEGG";
 
   //
   static String bhiMUpiIcon = "assets/image/bhim_upi_icon.svg";

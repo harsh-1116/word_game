@@ -29,7 +29,8 @@ class _SignupViewState extends State<SignupView> {
 
   @override
   Widget build(BuildContext context) {
-    double viewInsetsHeight = Get.height* 0.35;
+    // double viewInsetsHeight = Get.height* 0.35;
+    double viewInsetsHeight = Get.height* 0.15;
     return GetBuilder(
 
         init: SignupController(),
@@ -82,14 +83,15 @@ class _SignupViewState extends State<SignupView> {
                                     ),
                                     child: CommonWidgets.blurCardWithBottomText(
                                         containerHeight: MediaQuery.of(context).viewInsets.bottom > 0  ? Get.height * 0.78 : Get.height * 0.68,
+                                        // MediaQuery.of(context).viewInsets.bottom > 0  ? Get.height * 0.78 : Get.height * 0.68,
                                         containerWidth: double.infinity,
                                         scrollContentBottomPadding: 10,
                                         scrollContentLeftPadding: 20,
                                         scrollContentRightPadding: 20,
-                                        sigmaX: 25,
+                                        sigmaX: 15,
                                         sigmaY: 7,
                                         bottomWidgetBottomPadding: 10,
-                                        scrollContentTopPadding:  MediaQuery.of(context).viewInsets.bottom > 0  ? 0 : 25,
+                                        scrollContentTopPadding:  15,
                                         blurCardBottomPadding: 10,
                                         blurCardLeftPadding: 25,
                                         blurCardRightPadding: 25,
@@ -106,7 +108,8 @@ class _SignupViewState extends State<SignupView> {
 
                                                 Padding(
                                                   padding:  EdgeInsets.only(
-                                                      top:  Get.height* 0.005,bottom: MediaQuery.of(context).viewInsets.bottom > 0  ? 5 : 0),
+                                                      top: 15,/*bottom: MediaQuery.of(context).viewInsets.bottom > 0  ? 00 : 0*/),
+                                                      // Get.height* 0.005,bottom: MediaQuery.of(context).viewInsets.bottom > 0  ? 5 : 0),
                                                   child: CommonWidgets.commonText(
                                                     text: "SIGN UP",
                                                     fontSize: 22,
@@ -211,7 +214,7 @@ class _SignupViewState extends State<SignupView> {
                                                 Container(
 
                                                   padding: EdgeInsets.only(top: 10,bottom: MediaQuery.of(context).
-                                                  viewInsets.bottom > 0 ? viewInsetsHeight - 40 : 20),
+                                                  viewInsets.bottom > 0 ? viewInsetsHeight + 80  : 20),
                                                   child: CommonWidgets.submitButton(
                                                       onclick: () {
                                                         Get.to(Home());
@@ -221,8 +224,7 @@ class _SignupViewState extends State<SignupView> {
                                                       containerHeight: 80,
                                                       containerWidth: double.infinity,
                                                       textLeftPadding:
-                                                      Get.width *
-                                                          0.25,
+                                                      Get.width * 0.25,
                                                       fontSize: 18,
                                                       textColor: Colors.blueAccent),
                                                 ),
