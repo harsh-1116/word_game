@@ -123,6 +123,10 @@ class _SignupViewState extends State<SignupView> {
                                                 Container(
                                                   padding: EdgeInsets.only(top: 25),
                                                   child: CommonWidgets.commonTextFormField(
+                                                    onTap: (){
+                                                      controller.changeStatus();
+                                                      printInfo(info: "name-~-~-~-~-~${controller.name}");
+                                                    },
                                                     scrollpadding: 500,
                                                     hint: StringConstant.name,
                                                     textEditingController:
@@ -213,7 +217,8 @@ class _SignupViewState extends State<SignupView> {
                                                 ),
                                                 Container(
 
-                                                  padding: EdgeInsets.only(top: 10,bottom: MediaQuery.of(context).
+                                                  padding: EdgeInsets.only(top: 10,bottom:
+                                                  MediaQuery.of(context).
                                                   viewInsets.bottom > 0 ? viewInsetsHeight + 80  : 20),
                                                   child: CommonWidgets.submitButton(
                                                       onclick: () {
@@ -232,7 +237,7 @@ class _SignupViewState extends State<SignupView> {
                                             ),
                                           ),
                                         ),
-                                        bottomText: Padding(
+                                        bottomWidget: Padding(
                                           padding: const EdgeInsets.only(top:10,bottom: 0),
                                           child: Row(
                                             crossAxisAlignment: CrossAxisAlignment.start,

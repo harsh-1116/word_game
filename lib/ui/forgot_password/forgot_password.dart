@@ -130,6 +130,7 @@ class _ForgotPasswordState extends State<ForgotPassword> {
                                   textColor: ColorConstant.whiteColor,
                                 ),
                               ),
+
                               Container(
 
                                 padding: EdgeInsets.only(top: 10,bottom: MediaQuery.of(context).

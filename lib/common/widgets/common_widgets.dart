@@ -33,7 +33,7 @@ class CommonWidgets {
 
   static Widget blurCardWithBottomText({
     required Widget scrollableContent,
-     Widget? bottomText,
+     Widget? bottomWidget,
     double? blurCardTopPadding,
     double? blurCardBottomPadding,
     double? blurCardLeftPadding,
@@ -71,7 +71,8 @@ class CommonWidgets {
               ),
               padding:  EdgeInsets.only(
 
-                  top: scrollContentTopPadding??0, left: scrollContentLeftPadding??0, right: scrollContentRightPadding??0,
+                  top: scrollContentTopPadding??0, left: scrollContentLeftPadding??0,
+                  right: scrollContentRightPadding??0,
                   bottom: scrollContentBottomPadding??0),
               child: Column(
                 // mainAxisAlignment: MainAxisAlignment.center,
@@ -79,7 +80,8 @@ class CommonWidgets {
                 // alignment: stackAlignment?? Alignment.topCenter,
                 children: [
                   scrollableContent,
-                  Positioned(bottom: bottomWidgetBottomPadding?? -3, child: bottomText??Container())
+                  Positioned(bottom: bottomWidgetBottomPadding?? -3,
+                      child: bottomWidget??Container())
                 ],
               )),
         ),

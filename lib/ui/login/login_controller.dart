@@ -13,6 +13,21 @@ class LoginController extends GetxController{
 
   final LoginState loginState = LoginState();
   final _authRepository = Get.find<AuthRepository>();
+  final active = false.obs;
+  final updateActive = Get.height.obs > 750 ? true : false;
+  bool hidePassword = false;
+  RxBool hidePasswords = false.obs;
+  var pressedBool = false;
+
+  @override
+  void onInit() {
+    printInfo(info: "objectt");
+    deviceSize();
+    functionPass();
+    super.onInit();
+  }
+
+
 
 
   void doLogin() async {
@@ -52,5 +67,43 @@ class LoginController extends GetxController{
     }
   }
 
+  deviceSize(){
+    final updateActive = Get.height > 750 ? true : false;
+
+    double deviceHeight = Get.height;
+    double deviceWidth = Get.width;
+    double devicePixelRatio = Get.window.devicePixelRatio;
+    print("deviceHeight-~-~-~-~-~ $deviceHeight");
+    print("deviceWidth-~-~-~-~-~ $deviceWidth");
+    print("devicePixelRatio-~-~-~-~-~ $devicePixelRatio");
+  }
+
+  changeStatus() {
+    if(pressedBool){
+      pressedBool = false;
+    }
+    else {
+      pressedBool = true;
+    }
+    update();
+
+  }
+
+  functionPass(){
+    active(!active.value);
+    updateActive;
+    printInfo(info: "active-~-~-~-~-~ ${active(!active.value)}");
+    printInfo(info: "changeStatus-~-~-~-~-~ $changeStatus(");
+  }
+
+  changePassword(){
+    if(hidePassword == true){
+      hidePassword == false;
+    } else{
+      hidePassword == true;
+    }
+    hidePassword = !hidePassword;
+    update();
+  }
 
 }

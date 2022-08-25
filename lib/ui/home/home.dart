@@ -43,10 +43,13 @@ class _HomeState extends State<Home> {
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
                         CircleAvatar(
-                          backgroundImage: AssetImage(ImageAssets.splash),
+                          child:Container(
+                            decoration: BoxDecoration(border: Border.all(color: Colors.white,width: 0.5),borderRadius: BorderRadius.circular(50),),
+                          ),
+                          backgroundImage: AssetImage(ImageAssets.harsh),
                         ),
                         CircleAvatar(
-                          backgroundImage: AssetImage(ImageAssets.splash),
+                          backgroundImage: AssetImage(ImageAssets.setting),
 
                         ),
                       ],

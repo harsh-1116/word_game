@@ -61,6 +61,7 @@ class StringConstant{
 
   ///
   static const String realTimeMultiplayer = "REAL TIME MULTIPLAYE";
+  static const String twoPlayer = "TWO PLAYER";
   static const String roomCode = "ROOM CODE :";
   static const String shareCode = "Share this room code with your friends and  ask them to join";
 ///

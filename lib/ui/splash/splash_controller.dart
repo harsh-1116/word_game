@@ -18,5 +18,6 @@ class SplashController extends GetxController{
       Get.off(()=>const LoginView());
     });
     print("hiiiMJ");
+
   }
 }

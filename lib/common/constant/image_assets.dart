@@ -1,22 +1,30 @@
 class ImageAssets{
 
   //bottomNavigation Icon
-  static String splash = "assets/image/splash.png";
+  static String splash1 = "assets/image/bg1.svg";
+  static String splash2 = "assets/image/background2.svg";
+  static String splash3 = "assets/image/bluebackground1.png.svg";
+  static String splash = "assets/image/backgroundImage.png";
+  static String splash5 = "assets/image/splash.png";
+  static String splash6 = "assets/image/blueSplash.png";
+  static String splash7 = "assets/image/splash22.png";
+  static String blueSplash = "assets/image/blueSplash.png";
   static String blueBackground = "assets/image/blueBackground.png";
-  static String submitButton = "assets/image/submitButton.png";
+  static String submitButton = "assets/image/splash.png";
   static String withIcon = "assets/image/withIcon.png";
   static String withoutIcon = "assets/image/withoutIcon.png";
   static String buttonWithIcon = "assets/image/buttonWithIcon.png";
   static String historyIcon = "assets/image/history_icon.svg";
   static String settingsIcon = "assets/image/settings_icon.svg";
   static String harsh = "assets/image/harsh.JPEG";
-  static String jigs = "assets/image/jigs.JPEGG";
+  static String jigs = "assets/image/jigs.JPEG";
+  static String setting = "assets/image/setting.png";
 
   //
   static String bhiMUpiIcon = "assets/image/bhim_upi_icon.svg";
   static String blackBackIcon = "assets/image/black_back_icon.svg";
   static String blankRadioButton = "assets/image/blank_radio_button.svg";
-  static String calenderIcon = "assets/image/calander_icon.svg";
+  static String calenderIcon = "assets/image/calender_icon.svg";
   static String changePasswordSettingScreen = "assets/image/change_password_setting_screen.svg";
   static String checkedBox = "assets/image/checked_box_icon.svg";
   static String clockIcon = "assets/image/clock_icon.svg";

@@ -93,7 +93,7 @@ class _SelectPlayerState extends State<SelectPlayer> {
                           onclick: () {
                             Get.to(RoomCode());
                           },
-                          text: "MULTI PLAYER",
+                          text: "TWO PLAYER",
                           imagePath: ImageAssets.buttonWithIcon,
                           containerHeight: 80,
                           containerWidth: double.infinity,
